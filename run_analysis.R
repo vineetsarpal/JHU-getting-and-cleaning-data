@@ -45,4 +45,4 @@ Tidy_data <- Extract_data %>%
     summarize_all(.funs = mean)
 
 # Writing to a File
-write.csv(Tidy_data, "TidyData.csv")
+write.table(Tidy_data, "TidyData.txt", row.names = FALSE)
